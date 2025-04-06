@@ -1,0 +1,148 @@
+/* profile.css */
+
+/* Global Reset and Typography */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* App Container Layout */
+.app-container {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 240px;
+  background-color: #1e1e2f;
+  color: #fff;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffd700;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: #ddd;
+  padding: 0.75rem 1rem;
+  display: block;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #333;
+  color: #ffd700;
+}
+
+/* Main Content Styling */
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+/* Header Bar */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+header input[type="text"] {
+  width: 60%;
+  padding: 0.6rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+#themeToggle {
+  padding: 0.6rem 1rem;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Profile Card Styling */
+.profile-card {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h2 {
+  margin-bottom: 1.5rem;
+  font-size: 28px;
+  color: #444;
+}
+
+.profile-info {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #f4f4f4;
+}
+
+body.dark .main-content {
+  background-color: #1e1e1e;
+}
+
+body.dark .profile-card {
+  background-color: #2a2a2a;
+  color: #ddd;
+}
+
+body.dark .sidebar {
+  background-color: #10101a;
+}
+
+body.dark .sidebar h2 {
+  color: #ffd700;
+}
+
+body.dark .sidebar ul li a {
+  color: #ccc;
+}
+
+body.dark header input[type="text"] {
+  background-color: #2a2a2a;
+  border: 1px solid #555;
+  color: #fff;
+}

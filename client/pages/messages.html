@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Messages | Researcher Hive</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <nav class="sidebar">
+      <h2>Hive</h2>
+      <ul>
+        <li><a href="dashboard.html">🏠 Home</a></li>
+        <li><a href="profile.html">👤 Profile</a></li>
+        <li><a href="connections.html">🔗 Connections</a></li>
+        <li><a href="messages.html">💬 Messages</a></li>
+        <li><a href="index.html">🚪 Logout</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <header class="navbar">
+        <input type="text" placeholder="Search Chat..." />
+        <button id="themeToggle">🌙</button>
+      </header>
+
+      <section class="chat-container">
+        <aside class="chat-sidebar">
+          <h3>Chats</h3>
+          <ul id="chatList">
+            <!-- Chat names load here -->
+          </ul>
+        </aside>
+        <div class="chat-window">
+          <div id="chatMessages" class="chat-messages">
+            <!-- Messages appear here -->
+          </div>
+          <form id="messageForm" class="chat-input">
+            <input type="text" placeholder="Type a message..." id="messageInput" required />
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

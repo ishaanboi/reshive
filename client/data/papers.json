@@ -1,0 +1,20 @@
+[
+  {
+    "title": "A Survey on Lattice-Based Cryptography",
+    "author": "John Doe",
+    "publisher": "IEEE",
+    "scholarLink": "https://scholar.google.com/citations?user=abc123"
+  },
+  {
+    "title": "Applications of AI in Healthcare",
+    "author": "Jane Smith",
+    "publisher": "Springer",
+    "scholarLink": "https://scholar.google.com/citations?user=xyz456"
+  },
+  {
+    "title": "Optimizing Blockchain with Quantum Algorithms",
+    "author": "Michael Lee",
+    "publisher": "ACM",
+    "scholarLink": "https://scholar.google.com/citations?user=pqr789"
+  }
+]

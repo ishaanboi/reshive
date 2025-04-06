@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | Researcher Hive</title>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <script src="../js/dashboard.js" defer></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Sidebar -->
+      <nav class="sidebar">
+        <h2>🐝 Hiver</h2>
+        <ul>
+          <li><a href="dashboard.html">🏠 Home</a></li>
+          <li><a href="profile.html">👤 Profile</a></li>
+          <li><a href="connections.html">🔗 Connections</a></li>
+          <li><a href="messages.html">💬 Messages</a></li>
+          <li><a href="upload.html">📑 Upload</a></li>
+          <li><a href="index.html">🚪 Logout</a></li>
+        </ul>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Navbar -->
+        <header class="navbar">
+          <div class="search-wrapper">
+            <span class="search-emoji">🔍</span>
+            <input type="text" placeholder="Search Researchers..." />
+          </div>
+          <div class="navbar-icons">
+            <a href="#" id="userIcon">👤</a>
+            <button id="themeToggle">🌙</button>
+          </div>
+        </header>
+
+        <!-- Dashboard Section -->
+        <section class="dashboard">
+          <h1>Welcome to Researcher Hive</h1>
+          <p>This is your hub to connect, publish, and grow your research network.</p>
+
+          <!-- 👇 Injected from backend -->
+          <div id="userInfoBox" class="user-box">
+            <h2 id="welcomeName">Welcome, Loading...</h2>
+            <p id="userEmail">Email: Loading...</p>
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

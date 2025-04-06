@@ -1,0 +1,208 @@
+/* Upload Form Styling */
+.upload-form {
+  margin-top: 2rem;
+  margin-left: 350px;
+  padding: 30px;
+  background-color: #b5b5b5;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 500px;
+}
+
+/* Input fields */
+.upload-form input[type="text"],
+.upload-form textarea,
+.upload-form input[type="file"] {
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.upload-form input[type="text"]:focus,
+.upload-form textarea:focus,
+.upload-form input[type="file"]:focus {
+  border: 1px solid #272727;
+}
+
+/* Textarea specifics */
+.upload-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Submit button */
+.upload-form button[type="submit"] {
+  background-color: #272727;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.upload-form button[type="submit"]:hover {
+  background-color: #444;
+}
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000000c6;
+  color: #ffffff;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #272727;
+  color: #fff;
+  padding: 1.5rem 1rem;
+}
+
+.sidebar h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffc107;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar ul li {
+  margin: 1rem 0;
+}
+
+.sidebar ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  display: block;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a5a1a1;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Search with emoji */
+.search-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-emoji {
+  position: absolute;
+  left: 15px;
+  font-size: 18px;
+  pointer-events: none;
+}
+
+.search-wrapper input[type="text"] {
+  width: 500px;
+  font-size: 20px;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  outline: none;
+  padding-left: 2.5rem; /* Ensures cursor is after emoji */
+}
+
+/* Navbar Icons */
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* User icon styling */
+#userIcon {
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#userIcon:hover {
+  background-color: #e0e0e0;
+  transform: scale(1.2);
+}
+
+/* Moon button */
+#themeToggle {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Dashboard */
+.dashboard {
+  padding: 2rem;
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.dashboard p {
+  font-size: 1.1rem;
+  color: #555;
+}
+.sidebar h2 {
+  margin-left: -20px;
+}

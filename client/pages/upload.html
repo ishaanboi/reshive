@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Research | Researcher Hive</title>
+    <link rel="stylesheet" href="../css/upload.css" />
+    <script src="../js/upload.js" defer></script> <!-- 👈 Add JS -->
+  </head>
+  <body>
+    <div class="app-container">
+      <nav class="sidebar">
+        <h2>🐝 Hiver</h2>
+        <ul>
+          <li><a href="dashboard.html">🏠 Home</a></li>
+          <li><a href="connections.html">🔗 Connections</a></li>
+          <li><a href="messages.html">💬 Messages</a></li>
+          <li><a href="upload.html">📑 Upload</a></li>
+          <li><a href="index.html">📝 Find Papers</a></li>
+          <li><a href="index.html">🤝 Find People</a></li>
+          <li><a href="profile.html">👤 Profile</a></li>
+          <li><a href="index.html">🚪 Logout</a></li>
+        </ul>
+      </nav>
+
+      <div class="main-content">
+        <header class="navbar">
+          <div class="search-wrapper">
+            <span class="search-emoji">🔍</span>
+            <input type="text" placeholder="Search Researchers..." />
+          </div>
+          <div class="navbar-icons">
+            <a href="https://example.com" id="userIcon">👤</a>
+            <button id="themeToggle">🌙</button>
+          </div>
+        </header>
+
+        <section class="upload-form">
+          <form id="uploadForm" enctype="multipart/form-data">
+            <input type="text" id="title" placeholder="Title" required />
+            <input type="text" id="tags" placeholder="Tags (comma separated)" />
+            <textarea id="description" placeholder="Description"></textarea>
+            <input type="file" id="file" accept=".pdf" required />
+            <button type="submit">Upload</button>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

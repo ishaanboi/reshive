@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Profile | Researcher Hive</title>
+  <link rel="stylesheet" href="../css/profile.css" />
+  <script src="../js/profile.js" defer></script>
+</head>
+<body>
+  <div class="app-container">
+    <nav class="sidebar">
+      <h2>🐝 Hiver</h2>
+      <ul>
+        <li><a href="dashboard.html">🏠 Home</a></li>
+        <li><a href="connections.html">🔗 Connections</a></li>
+        <li><a href="messages.html">💬 Messages</a></li>
+        <li><a href="upload.html">📑 Upload</a></li>
+        <li><a href="index.html">📝 Find Papers</a></li>
+        <li><a href="index.html">🤝 Find People</a></li>
+        <li><a href="profile.html" class="active">👤 Profile</a></li>
+        <li><a href="index.html">🚪 Logout</a></li>
+      </ul>
+    </nav>
+
+    <div class="main-content">
+      <header class="navbar">
+        <div class="search-wrapper">
+          <span class="search-emoji">🔍</span>
+          <input type="text" placeholder="Search Researchers..." />
+        </div>
+        <div class="navbar-icons">
+          <a href="profile.html" id="userIcon">👤</a>
+          <button id="themeToggle">🌙</button>
+        </div>
+      </header>
+
+      <section class="profile-section">
+        <h2>Your Profile</h2>
+        <div id="profileInfo">
+          <p><strong>Name:</strong> <span id="profileName">Loading...</span></p>
+          <p><strong>Email:</strong> <span id="profileEmail">Loading...</span></p>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
