@@ -3,7 +3,7 @@
 const express = require("express");
 const router = express.Router();
 const authMiddleware = require("../middleware/authMiddleware"); // Assuming you have this
-const User = require("./models/user"); // Your Mongoose User model
+const User = require("D:\ai\HGF2\hack gang latest\project root\server\models\User.js"); // Your Mongoose User model
 
 // GET /api/user/profile
 router.get("/profile", authMiddleware, async (req, res) => {
