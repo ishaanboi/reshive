@@ -1,7 +1,8 @@
 // server/routes/auth.js
 const express = require('express');
 const router = express.Router();
-const { registerUser, loginUser } = require('../../controllers/authController');
+const { registerUser, loginUser } = require('../controllers/authController');
+
 
 // Test route
 router.get('/test', (req, res) => {
