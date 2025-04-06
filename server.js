@@ -36,14 +36,14 @@ app.get('/', (req, res) => {
 });
 
 // All routes (make sure these files exist and export routers)
-const authRoutes = require('./server/routes/auth');
+const authRoutes = require('../server/routes/auth');
 const profileRoutes = require('./server/routes/profile');
 const networkingRoutes = require('./server/routes/networking');
 const messagingRoutes = require('./server/routes/messaging');
 const researchRoutes = require('./server/routes/research');
 
-app.use('./models/auth', authRoutes);         // Login/Register — uses bcrypt & JWT
-app.use('./models/profile', profileRoutes);
-app.use('./models/networking', networkingRoutes);
-app.use('./models/messages', messagingRoutes);
-app.use('./models/research', researchRoutes); // File uploads etc.
+app.use('/api/auth', authRoutes);         // Login/Register — uses bcrypt & JWT
+app.use('/api/profile', profileRoutes);
+app.use('/api/networking', networkingRoutes);
+app.use('/api/messages', messagingRoutes);
+app.use('/api/research', researchRoutes); // File uploads etc.
