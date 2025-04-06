@@ -36,11 +36,11 @@ app.get('/', (req, res) => {
 });
 
 // All routes (make sure these files exist and export routers)
-const authRoutes = require('D:\ai\HGF2\hack gang latest\project root\server\routes\auth.js');
-const profileRoutes = require('D:\ai\HGF2\hack gang latest\project root\server\routes\messaging.js');
-const networkingRoutes = require('../server/routes/networking');
-const messagingRoutes = require('../server/routes/messaging');
-const researchRoutes = require('../server/routes/research');
+const authRoutes = require('./server/routes/auth');
+const profileRoutes = require('./server/routes/messaging');
+const networkingRoutes = require('./server/routes/networking');
+const messagingRoutes = require('./server/routes/messaging');
+const researchRoutes = require('./server/routes/research');
 
 app.use('/api/auth', authRoutes);         // Login/Register — uses bcrypt & JWT
 app.use('/api/profile', profileRoutes);
